@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutrieXpress</title>
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f9fafb; color: #333; }
+    header { background: #fff; box-shadow: 0 2px 4px rgba(0,0,0,0.1); padding: 15px 30px; display: flex; justify-content: space-between; align-items: center; }
+    header h1 { margin: 0; color: #16a34a; }
+    nav a { margin: 0 10px; text-decoration: none; color: #333; }
+    nav a:hover { color: #16a34a; }
+    .hero { display: flex; flex-wrap: wrap; padding: 50px 30px; background: linear-gradient(to right, #fff, #ecfdf5); }
+    .hero-text { flex: 1; min-width: 280px; }
+    .hero-text h2 { font-size: 2em; color: #111; }
+    .hero-text p { margin: 20px 0; color: #555; }
+    .hero-text a { display: inline-block; margin-right: 10px; padding: 10px 20px; border-radius: 8px; text-decoration: none; }
+    .btn-primary { background: #16a34a; color: #fff; }
+    .btn-secondary { border: 1px solid #ccc; color: #333; }
+    .hero img { max-width: 100%; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+    section { padding: 50px 30px; max-width: 1000px; margin: auto; }
+    section h3 { font-size: 1.8em; margin-bottom: 10px; }
+    .features, .pricing { display: grid; gap: 20px; }
+    .features { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); }
+    .pricing { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); margin-top: 30px; }
+    .pricing .card h4 { margin: 0; }
+    .pricing .price { font-size: 1.5em; font-weight: bold; margin: 10px 0; color: #16a34a; }
+    form { display: grid; gap: 10px; }
+    input, textarea { width: 100%; padding: 10px; border-radius: 6px; border: 1px solid #ccc; }
+    button { background: #16a34a; color: #fff; padding: 10px; border: none; border-radius: 6px; cursor: pointer; }
+    button:hover { background: #15803d; }
+    footer { background: #fff; padding: 20px 30px; text-align: center; font-size: 0.9em; color: #555; border-top: 1px solid #eee; }
+    footer a { color: #16a34a; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NutrieXpress</h1>
+    <nav>
+      <a href="#features">Funcionalidades</a>
+      <a href="#pricing">Planos</a>
+      <a href="#about">Sobre</a>
+      <a href="#contact">Contato</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Nutrição inteligente para o seu dia a dia</h2>
+      <p>Alimente-se melhor e evolua junto com quem tem os mesmos objetivos.</p>
+      <a href="#pricing" class="btn-primary">Assinar agora</a>
+      <a href="#about" class="btn-secondary">Saiba mais</a>
+    </div>
+    <div>
+      <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=800&q=60" alt="Nutrição">
+    </div>
+  </section>
+
+  <section id="features">
+    <h3>O que oferecemos</h3>
+    <div class="features">
+      <div class="card"><h4>Planos Personalizados</h4><p>Metas e ajustes mensais.</p></div>
+      <div class="card"><h4>Receitas e Cardápios</h4><p>Receitas práticas e sugestões para diferentes perfis.</p></div>
+      <div class="card"><h4>Conteúdo Exclusivo</h4><p>Vídeos, lives e artigos com nutricionistas.</p></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h3>Planos</h3>
+    <div class="pricing">
+      <div class="card">
+        <h4>Grátis</h4>
+        <div class="price">R$ 0</div>
+        <p>Acesso limitado, artigos grátis, comunidade.</p>
+        <button>Criar conta</button>
+      </div>
+      <div class="card">
+        <h4>Mensal</h4>
+        <div class="price">R$ 19,90/mês</div>
+        <p>Acesso completo, planos personalizados, conteúdo exclusivo.</p>
+        <button>Assinar</button>
+      </div>
+      <div class="card">
+        <h4>Anual</h4>
+        <div class="price">R$ 199/ano</div>
+        <p>Economize 15%, acesso completo, consultas em sorteios.</p>
+        <button>Assinar</button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h3>Sobre a NutrieXpress</h3>
+    <p>Somos uma plataforma dedicada a transformar informação nutricional em hábitos simples. Nossa equipe reúne nutricionistas, desenvolvedores e comunicadores para entregar conteúdo confiável e fácil de aplicar.</p>
+    <ul>
+      <li>✔ Conteúdo validado por profissionais</li>
+      <li>✔ Planos pensados para diferentes rotinas</li>
+      <li>✔ Parcerias com marcas de qualidade</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h3>Fale conosco</h3>
+    <form>
+      <input type="text" placeholder="Seu nome">
+      <input type="email" placeholder="Seu e-mail">
+      <textarea rows="4" placeholder="Sua mensagem"></textarea>
+      <button type="submit">Enviar mensagem</button>
+    </form>
+  </section>
+
+  <footer>
+    © 2025 NutrieXpress Ltda. — CNPJ: 12.345.678/0001-99 | 
+    <a href="#politica">Política de Privacidade</a> • 
+    <a href="#termos">Termos de Uso</a>
+  </footer>
+
+  <section id="politica">
+    <h3>Política de Privacidade</h3>
+    <p>A NutrieXpress respeita sua privacidade. As informações fornecidas pelos usuários são utilizadas apenas para melhorar a experiência dentro da plataforma e nunca serão vendidas ou compartilhadas sem consentimento.</p>
+    <ul>
+      <li>✔ Coletamos apenas dados essenciais (nome, e-mail, preferências alimentares).</li>
+      <li>✔ Usamos cookies para melhorar a navegação.</li>
+      <li>✔ Você pode solicitar a exclusão dos seus dados a qualquer momento.</li>
+    </ul>
+  </section>
+
+  <section id="termos">
+    <h3>Termos de Uso</h3>
+    <p>Ao utilizar a NutrieXpress, você concorda em seguir as seguintes regras:</p>
+    <ul>
+      <li>✔ Não utilizar a plataforma para fins ilegais ou prejudiciais.</li>
+      <li>✔ Respeitar os direitos autorais de todo o conteúdo publicado.</li>
+      <li>✔ As informações fornecidas são de caráter informativo e não substituem acompanhamento médico individual.</li>
+    </ul>
+  </section>
+</body>
+</html>
